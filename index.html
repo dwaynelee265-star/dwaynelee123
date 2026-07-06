@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Leebound Coffee Roasters — Preview</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+
+<div class="demo-bar">
+  <span>PREVIEW</span>
+  <button class="demo-btn active" data-page="home">Home</button>
+  <button class="demo-btn" data-page="products">Products &amp; Process</button>
+  <button class="demo-btn" data-page="contact">Contact</button>
+</div>
+
+
+<div class="page active" id="page-home">
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand"><span class="brand-mark"></span>Leebound</a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu"><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span></button>
+      <nav><ul class="nav-links">
+        <li><a class="current">Home</a></li>
+        <li><a data-goto="products">Products &amp; Process</a></li>
+        <li><a data-goto="contact">Contact</a></li>
+      </ul></nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div>
+          <span class="eyebrow">Roasted in small batches, every week</span>
+          <h1>Coffee roasted for the people who'll actually taste it.</h1>
+          <p class="lede" id="dynamic-greeting">Welcome to Leebound — thanks for stopping by.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" data-goto="products">Shop this week's roast</a>
+            <a class="btn btn-outline" data-goto="contact">Visit the tasting room</a>
+          </div>
+          <span class="batch-stamp" id="roastery-clock">Roastery time —</span>
+        </div>
+        <svg viewBox="0 0 480 420" role="img" aria-label="Illustration of steam rising from a cup of coffee surrounded by roasted beans">
+          <defs><linearGradient id="steamGrad" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#C17817" stop-opacity="0"/><stop offset="1" stop-color="#C17817" stop-opacity="0.9"/></linearGradient></defs>
+          <path d="M190 150 C170 120 210 110 195 80 C182 55 205 40 200 15" fill="none" stroke="url(#steamGrad)" stroke-width="6" stroke-linecap="round"/>
+          <path d="M240 150 C220 120 260 108 246 76 C234 50 258 34 252 8" fill="none" stroke="url(#steamGrad)" stroke-width="6" stroke-linecap="round"/>
+          <path d="M290 150 C272 122 308 112 296 82 C285 58 306 44 300 20" fill="none" stroke="url(#steamGrad)" stroke-width="6" stroke-linecap="round"/>
+          <path d="M120 170 h220 l-14 130 a30 30 0 0 1 -30 26 H164 a30 30 0 0 1 -30 -26 Z" fill="#EDE6D6" stroke="#2B2420" stroke-width="6"/>
+          <path d="M340 190 c40 -8 60 20 40 46 c-12 15 -34 20 -50 14" fill="none" stroke="#2B2420" stroke-width="6" stroke-linecap="round"/>
+          <ellipse cx="230" cy="172" rx="112" ry="14" fill="#6B4A2E"/>
+          <ellipse cx="230" cy="172" rx="112" ry="14" fill="none" stroke="#2B2420" stroke-width="6"/>
+          <ellipse cx="230" cy="336" rx="150" ry="18" fill="#EDE6D6" stroke="#2B2420" stroke-width="6"/>
+          <g fill="#6B4A2E" stroke="#2B2420" stroke-width="4">
+            <ellipse cx="70" cy="330" rx="22" ry="14" transform="rotate(-20 70 330)"/>
+            <ellipse cx="410" cy="325" rx="22" ry="14" transform="rotate(15 410 325)"/>
+            <ellipse cx="40" cy="360" rx="18" ry="11" transform="rotate(10 40 360)"/>
+            <ellipse cx="440" cy="360" rx="18" ry="11" transform="rotate(-10 440 360)"/>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Why Leebound</span>
+          <h2>Three things we won't compromise on</h2>
+        </div>
+        <div class="grid grid-3">
+          <div class="value-item"><span class="value-dot"></span><div><h3>Roasted to order</h3><p>Beans ship within 48 hours of roasting, never off a warehouse shelf.</p></div></div>
+          <div class="value-item"><span class="value-dot"></span><div><h3>Traceable origin</h3><p>Every bag lists the farm, altitude, and processing method behind it.</p></div></div>
+          <div class="value-item"><span class="value-dot"></span><div><h3>Fair, direct pricing</h3><p>We buy direct from growers at prices well above commodity rate.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">This week's roast</span>
+          <h2>Three roasts, one dial each</h2>
+          <p>Our roast dial shows exactly how far each batch travels from green to cup.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="product-card">
+            <div class="product-card__top">
+              <svg viewBox="0 0 120 120" aria-label="Light roast dial"><circle cx="60" cy="60" r="46" fill="none" stroke="#E7DDC7" stroke-width="12"/><circle cx="60" cy="60" r="46" fill="none" stroke="#C17817" stroke-width="12" stroke-linecap="round" stroke-dasharray="289" stroke-dashoffset="217" transform="rotate(-90 60 60)"/><text x="60" y="66" text-anchor="middle" font-family="monospace" font-size="16" fill="#EDE6D6">Lt</text></svg>
+              <span class="product-card__origin">Yirgacheffe, Ethiopia</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Fog Line</h3>
+              <ul class="tasting-notes"><li>Bergamot</li><li>Peach</li><li>Black tea</li></ul>
+              <div class="price-row"><span class="price">$19 / 12oz</span></div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__top">
+              <svg viewBox="0 0 120 120" aria-label="Medium roast dial"><circle cx="60" cy="60" r="46" fill="none" stroke="#E7DDC7" stroke-width="12"/><circle cx="60" cy="60" r="46" fill="none" stroke="#A64B3C" stroke-width="12" stroke-linecap="round" stroke-dasharray="289" stroke-dashoffset="145" transform="rotate(-90 60 60)"/><text x="60" y="66" text-anchor="middle" font-family="monospace" font-size="16" fill="#EDE6D6">Md</text></svg>
+              <span class="product-card__origin">Huila, Colombia</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Harbor Blend</h3>
+              <ul class="tasting-notes"><li>Brown sugar</li><li>Plum</li><li>Almond</li></ul>
+              <div class="price-row"><span class="price">$17 / 12oz</span></div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__top">
+              <svg viewBox="0 0 120 120" aria-label="Dark roast dial"><circle cx="60" cy="60" r="46" fill="none" stroke="#E7DDC7" stroke-width="12"/><circle cx="60" cy="60" r="46" fill="none" stroke="#2B2420" stroke-width="12" stroke-linecap="round" stroke-dasharray="289" stroke-dashoffset="40" transform="rotate(-90 60 60)"/><text x="60" y="66" text-anchor="middle" font-family="monospace" font-size="16" fill="#EDE6D6">Dk</text></svg>
+              <span class="product-card__origin">Mandheling, Sumatra</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Low Tide</h3>
+              <ul class="tasting-notes"><li>Cedar</li><li>Molasses</li><li>Clove</li></ul>
+              <div class="price-row"><span class="price">$18 / 12oz</span></div>
+            </div>
+          </article>
+        </div>
+        <p class="text-center" style="margin-top:2rem"><a class="btn btn-primary" data-goto="products">See the full lineup</a></p>
+      </div>
+    </section>
+  </main>
+  <div id="footer-home"></div>
+</div>
+
+
+<div class="page" id="page-products">
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand"><span class="brand-mark"></span>Leebound</a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu"><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span></button>
+      <nav><ul class="nav-links">
+        <li><a data-goto="home">Home</a></li>
+        <li><a class="current">Products &amp; Process</a></li>
+        <li><a data-goto="contact">Contact</a></li>
+      </ul></nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero"><div class="container" style="grid-template-columns:1fr">
+      <div>
+        <span class="eyebrow">About Leebound</span>
+        <h1>From green bean to your grinder, in five roasting steps.</h1>
+        <p class="lede">We've roasted out of the same Foundry Street building since 2016 — a small drum roaster, a short list of farms we trust, and no interest in scaling past what we can taste-test ourselves.</p>
+      </div>
+    </div></section>
+
+    <section>
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">Current lineup</span><h2>This week's coffees</h2></div>
+        <div class="grid grid-3">
+          <article class="product-card">
+            <div class="product-card__top">
+              <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="46" fill="none" stroke="#E7DDC7" stroke-width="12"/><circle cx="60" cy="60" r="46" fill="none" stroke="#C17817" stroke-width="12" stroke-linecap="round" stroke-dasharray="289" stroke-dashoffset="217" transform="rotate(-90 60 60)"/><text x="60" y="66" text-anchor="middle" font-family="monospace" font-size="16" fill="#EDE6D6">Lt</text></svg>
+              <span class="product-card__origin">Yirgacheffe, Ethiopia<br>1,900m · Washed</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Fog Line</h3>
+              <p>Floral and bright, with a tea-like body that holds up as it cools.</p>
+              <ul class="tasting-notes"><li>Bergamot</li><li>Peach</li><li>Black tea</li></ul>
+              <div class="price-row"><span class="price">$19 / 12oz</span><span class="product-card__origin">#0619-A</span></div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__top">
+              <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="46" fill="none" stroke="#E7DDC7" stroke-width="12"/><circle cx="60" cy="60" r="46" fill="none" stroke="#A64B3C" stroke-width="12" stroke-linecap="round" stroke-dasharray="289" stroke-dashoffset="145" transform="rotate(-90 60 60)"/><text x="60" y="66" text-anchor="middle" font-family="monospace" font-size="16" fill="#EDE6D6">Md</text></svg>
+              <span class="product-card__origin">Huila, Colombia<br>1,700m · Honey</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Harbor Blend</h3>
+              <p>Our house coffee — balanced, syrupy, and forgiving of any brew method.</p>
+              <ul class="tasting-notes"><li>Brown sugar</li><li>Plum</li><li>Almond</li></ul>
+              <div class="price-row"><span class="price">$17 / 12oz</span><span class="product-card__origin">#0619-B</span></div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__top">
+              <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="46" fill="none" stroke="#E7DDC7" stroke-width="12"/><circle cx="60" cy="60" r="46" fill="none" stroke="#2B2420" stroke-width="12" stroke-linecap="round" stroke-dasharray="289" stroke-dashoffset="40" transform="rotate(-90 60 60)"/><text x="60" y="66" text-anchor="middle" font-family="monospace" font-size="16" fill="#EDE6D6">Dk</text></svg>
+              <span class="product-card__origin">Mandheling, Sumatra<br>1,200m · Wet-hulled</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Low Tide</h3>
+              <p>Heavy-bodied and resinous — built for milk drinks and cold mornings.</p>
+              <ul class="tasting-notes"><li>Cedar</li><li>Molasses</li><li>Clove</li></ul>
+              <div class="price-row"><span class="price">$18 / 12oz</span><span class="product-card__origin">#0619-C</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-alt">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">Our process</span><h2>Five steps, same order, every batch</h2></div>
+        <ol class="process-list">
+          <li class="process-item"><svg viewBox="0 0 100 100"><rect x="15" y="30" width="70" height="45" rx="8" fill="#2B2420"/><circle cx="50" cy="52" r="18" fill="none" stroke="#C17817" stroke-width="4" stroke-dasharray="6 6"/><rect x="82" y="45" width="12" height="14" rx="3" fill="#C17817"/><rect x="40" y="18" width="20" height="12" rx="2" fill="#6B4A2E"/></svg><div><h3>1. Source</h3><p>We buy direct from four growing regions we've visited in person, at prices set above commodity rate.</p></div></li>
+          <li class="process-item"><svg viewBox="0 0 100 100"><rect x="15" y="30" width="70" height="45" rx="8" fill="#2B2420"/><circle cx="50" cy="52" r="18" fill="none" stroke="#C17817" stroke-width="4" stroke-dasharray="6 6"/><rect x="82" y="45" width="12" height="14" rx="3" fill="#C17817"/><rect x="40" y="18" width="20" height="12" rx="2" fill="#6B4A2E"/></svg><div><h3>2. Cup</h3><p>Every incoming lot is cupped blind against the last three harvests before it's approved for purchase.</p></div></li>
+          <li class="process-item"><svg viewBox="0 0 100 100"><rect x="15" y="30" width="70" height="45" rx="8" fill="#2B2420"/><circle cx="50" cy="52" r="18" fill="none" stroke="#C17817" stroke-width="4" stroke-dasharray="6 6"/><rect x="82" y="45" width="12" height="14" rx="3" fill="#C17817"/><rect x="40" y="18" width="20" height="12" rx="2" fill="#6B4A2E"/></svg><div><h3>3. Roast</h3><p>Small 12kg batches on our drum roaster, profiled per lot rather than run on a single house curve.</p></div></li>
+          <li class="process-item"><svg viewBox="0 0 100 100"><rect x="15" y="30" width="70" height="45" rx="8" fill="#2B2420"/><circle cx="50" cy="52" r="18" fill="none" stroke="#C17817" stroke-width="4" stroke-dasharray="6 6"/><rect x="82" y="45" width="12" height="14" rx="3" fill="#C17817"/><rect x="40" y="18" width="20" height="12" rx="2" fill="#6B4A2E"/></svg><div><h3>4. Rest</h3><p>Beans rest 24–72 hours to let CO2 escape before bagging, so the coffee doesn't taste flat or sharp.</p></div></li>
+          <li class="process-item"><svg viewBox="0 0 100 100"><rect x="15" y="30" width="70" height="45" rx="8" fill="#2B2420"/><circle cx="50" cy="52" r="18" fill="none" stroke="#C17817" stroke-width="4" stroke-dasharray="6 6"/><rect x="82" y="45" width="12" height="14" rx="3" fill="#C17817"/><rect x="40" y="18" width="20" height="12" rx="2" fill="#6B4A2E"/></svg><div><h3>5. Ship</h3><p>Bags go out within 48 hours of roasting — stamped with the roast date and batch number.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">Services</span><h2>Beyond the retail bag</h2></div>
+        <div class="card">
+          <table class="services-table">
+            <thead><tr><th>Service</th><th>Best for</th><th>Starting at</th></tr></thead>
+            <tbody>
+              <tr><td>Subscription roast box</td><td>Home brewers who don't want to reorder manually</td><td>$16 / bag, biweekly</td></tr>
+              <tr><td>Wholesale accounts</td><td>Cafés and restaurants needing weekly delivery</td><td>Custom pricing</td></tr>
+              <tr><td>Cupping &amp; training sessions</td><td>Baristas and teams learning to taste coffee</td><td>$45 / person</td></tr>
+              <tr><td>Private label roasting</td><td>Brands wanting their own house blend</td><td>Custom pricing</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="footer-products"></div>
+</div>
+
+
+<div class="page" id="page-contact">
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand"><span class="brand-mark"></span>Leebound</a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu"><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span></button>
+      <nav><ul class="nav-links">
+        <li><a data-goto="home">Home</a></li>
+        <li><a data-goto="products">Products &amp; Process</a></li>
+        <li><a class="current">Contact</a></li>
+      </ul></nav>
+    </div>
+  </header>
+  <main>
+    <section class="section-tight"><div class="container">
+      <span class="eyebrow">Get in touch</span>
+      <h1>Say hello, ask a question, or place a wholesale order.</h1>
+    </div></section>
+
+    <section class="section-tight">
+      <div class="container contact-grid">
+        <div>
+          <h2>Visit or write</h2>
+          <dl class="contact-info">
+            <dt>Address</dt><dd>412 Foundry Street, Portland, ME 04101</dd>
+            <dt>Email</dt><dd><a>hello@leeboundcoffee.example</a></dd>
+            <dt>Phone</dt><dd><a>(207) 555-0142</a></dd>
+            <dt>Tasting room hours</dt><dd>Tue–Fri: 7am–5pm<br>Sat–Sun: 8am–3pm<br>Mon: Roasting only, shop closed</dd>
+          </dl>
+        </div>
+        <div class="card">
+          <h2 class="mt-0">Send a message</h2>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          <form id="contact-form" novalidate>
+            <div class="form-field"><label for="name">Full name</label><input type="text" id="name" name="name" required><span class="field-error"></span></div>
+            <div class="form-field"><label for="email">Email address</label><input type="email" id="email" name="email" required><span class="field-error"></span></div>
+            <div class="form-field"><label for="topic">What's this about?</label>
+              <select id="topic" name="topic" required>
+                <option value="">Choose a topic</option>
+                <option value="general">General question</option>
+                <option value="wholesale">Wholesale account</option>
+                <option value="subscription">Subscription roast box</option>
+                <option value="training">Cupping &amp; training session</option>
+              </select><span class="field-error"></span>
+            </div>
+            <div class="form-field"><label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea><span class="field-error"></span></div>
+            <button type="submit" class="btn btn-primary">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="footer-contact"></div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
